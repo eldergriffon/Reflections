@@ -1,0 +1,31 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+If the "last known good" version of the code files can be identified, then any bug introduced in the current version is almost certainly caused by a difference between the old and new files. Being able to view all the differences one by one makes it possible to enumerate and evaluate each potential source for the bug in the most efficient manner. This is likely to make finding the bug faster.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+One of the basic tasks of programming is to introduce change and then verify that the resulting program works as intended. It is very common, however, to get unexpected and unwanted results. In such a case, in order to determine where the error is coming from, reversing the latest change, or possibly changes, is often necessary. It is, of course, possible to do this from memory, but this is very error prone and can be very slow. Being able to go back to an earlier version easily and reliably thus makes the debugging process much faster, and therefore the whole development effort more efficient.
+
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+The big "con" with manually choosing when to commit is that you are going to forget to do it. We've all had the experience of working on a big text document, making many revisions, and then having the power go out. With version control, forgetting to commit means that you may have to work with a lot of unrelated changes if you need to go back to a previous version. However, as you get used to the craft of programming, you will gradually learn to separate your work into logical parts and commit each part as you complete it. Being able to revert back to a meaningful stage in development is very useful, because it puts you back at a working copy of the code, rather than at some point that may be missing bug fixes or other essential steps.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+When the project you are working on has many and possibly complex dependencies between the individual files of the project, such as is often the case when writing code, it is extremely important that you can refer to a single snapshot that reflects the status of all the files at that one time. This behavior is more complex and therefore harder to manage, but it's absolutely essential. Otherwise, a programmer could find using version control to get to a stable earlier version of the project very challenging. On the other hand, this is not the most common scenario that most users find themselves in when doing routine tasks, like writing a letter, creating a spreadsheet, or working on a presentation. Most often, in those cases, either there are no dependencies between files or the dependencies are simple enough that it's fairly easy to manage them without special help. That extra ability to commit files at the same time isn't needed, and so isn't supported.
+
+How can you use the commands git log and git diff to view the history of files?
+
+With git log, you can look at a history of commits with the message for each commit. This is like an overview. To see the details of each commit, you can using the version ids with git diff to see what specifically was changed.
+
+
+How might using version control make you more confident to make changes that could break something?
+
+Under version control, you have a simple and entirely effective means to "get back on base" if something unexpected happens, like the pitcher throws to first. In contrast, if you didn't have version control and you made a number of major changes to your code that resulted in it breaking in a mystifying or unexpected way, you would be forced to undue your changes from memory in the hopes of getting back to a version of the code without the error. This can be time-consuming, tedious, and is not guaranteed to work. Even if it does work, you may have lost some of your changes in the process, putting you further behind. In a situation where high productivity is a must, this is a risk that simply can't be taken. You are forced to make very small, incremental changes, instead, and test each change thoroughly, which slows down the pace of work in itself. However, if you can reliably go back to a version that works, and look at all the changes that have happened since in detail, you can deal with the situation much more confidently.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I do a lot of coding, so I definitely plan to use it for that, but also I do writing of various kinds and I want to lean to use Git to control that kind of change.
+
+
