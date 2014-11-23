@@ -5,3 +5,7 @@ Durning initialization, a hidden set of folders is added to the filesystem. Git 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 The "staging area" allows you to group files that may have changed into a single logical commit. This makes easier to see the commit as a whole before executing it. These files may exist in the working directory, but not yet in the repository, so it is always possible to keep untracked files in the working directory with versioned files around them.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+Using "git status" lets you review the items in the staging are before they are committed, in order to make sure they are all part of a single logical commit. With large commits involving many files, this preview of the total contents of the commit can help you avoid missing any part of the commit, or committing too much.
