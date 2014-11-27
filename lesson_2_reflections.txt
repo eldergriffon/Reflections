@@ -9,3 +9,7 @@ The "staging area" allows you to group files that may have changed into a single
 How can you use the staging area to make sure you have one commit per logical change?
 
 Using "git status" lets you review the items in the staging are before they are committed, in order to make sure they are all part of a single logical commit. With large commits involving many files, this preview of the total contents of the commit can help you avoid missing any part of the commit, or committing too much.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+A branch allows you pursue two separate development paths simultaneously if you choose. One of the most common of such situations is when you want to develop a new feature but continue to fix bugs in the original code without having to deal with your new feature code at the same time. The branch separates out each scenario so it can be dealt with entirely in isolation. By doing so, you can complete each new objective, make sure it is working properly and is completely done, and only then commit back to the main code. This makes the history of commits on the master branch very clean; each commit represents a full logical package, not a lot of incremental steps.
