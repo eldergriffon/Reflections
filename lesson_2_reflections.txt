@@ -13,3 +13,7 @@ Using "git status" lets you review the items in the staging are before they are 
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
 A branch allows you pursue two separate development paths simultaneously if you choose. One of the most common of such situations is when you want to develop a new feature but continue to fix bugs in the original code without having to deal with your new feature code at the same time. The branch separates out each scenario so it can be dealt with entirely in isolation. By doing so, you can complete each new objective, make sure it is working properly and is completely done, and only then commit back to the main code. This makes the history of commits on the master branch very clean; each commit represents a full logical package, not a lot of incremental steps.
+
+How do the diagrams help you visualize the branch structure?
+
+Branches are related to one another by the points in history at which they diverge or converge. These points may have important implications for the work being done, but it can be hard to perceive these implications without seeing the history laid out as a tree structure. The diagrams help do this.
