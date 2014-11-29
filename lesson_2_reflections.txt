@@ -17,3 +17,7 @@ A branch allows you pursue two separate development paths simultaneously if you 
 How do the diagrams help you visualize the branch structure?
 
 Branches are related to one another by the points in history at which they diverge or converge. These points may have important implications for the work being done, but it can be hard to perceive these implications without seeing the history laid out as a tree structure. The diagrams help do this.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+When two branches are merged together, all the commits from each branch become part of the history of the surviving branch. Using a heuristic, git can automatically combine the commits into one complete set of files that include all these changes. The fully history of commits, after the merge, is represented as a series of changes in chronological order. However, can be slightly misleading, as the merged commits that are chronologically close to each other may actually have nothing to do with each other logically speaking. So, in the diagram, the merge is represented as two sets of commits from each branch so that they can be viewed as separate sequences. 
