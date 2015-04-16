@@ -9,3 +9,7 @@ In the course of development, taking full advantage of source control means comm
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
 
 To "clone" a repository means to make a complete copy of it, usually preparatory to making one's own changes. This is usually done in order to start a collaboration effort on the repository in question. When the copy is made of a GitHub repository, and the repository is copied onto GitHub itself, this is the special case of a clone called a "fork." The purpose of a fork is usually to collaborate on the development of the original repository through GitHub. A "branch" is a temporary workspace within a single repository used to create and test changes, preparatory to merging those changes back into the main master branch. Clones are used to develop locally against a remote repository. Forks are used to collaborate on a remote repository through GitHub that has been copied from another remote repository, with the idea of possibly submitting changes back to the original remote. Branches are used to manage changes to a single repository, usually local, and may be used with either a clone or a fork. You would use a branch only with a repository you have permission to modify.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+Storing the last known state of the remote allows you to perform certain operations offline, such as merges.
