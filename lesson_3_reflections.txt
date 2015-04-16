@@ -1,1 +1,11 @@
 When would you want to use a remote repository rather than keeping all your work local?
+
+Storing a repository remotely allows you to access it from a variety of locations and also protect it from a local failure, such as a bad disk. It also allows you to more easily share your work in order to collaborate with others.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+In the course of development, taking full advantage of source control means committing frequently so you can manage the progression of changes. However, after any given commit, the result may not be in a stable state or otherwise ready to be shared with the wider world. For this reason, you might want to push to the remote repository only a given set of commits that comprise a complete, stable product.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+To "clone" a repository means to make a complete copy of it, usually preparatory to making one's own changes. This is usually done in order to start a collaboration effort on the repository in question. When the copy is made of a GitHub repository, and the repository is copied onto GitHub itself, this is the special case of a clone called a "fork." The purpose of a fork is usually to collaborate on the development of the original repository through GitHub. A "branch" is a temporary workspace within a single repository used to create and test changes, preparatory to merging those changes back into the main master branch. Clones are used to develop locally against a remote repository. Forks are used to collaborate on a remote repository through GitHub that has been copied from another remote repository, with the idea of possibly submitting changes back to the original remote. Branches are used to manage changes to a single repository, usually local, and may be used with either a clone or a fork. You would use a branch only with a repository you have permission to modify.
