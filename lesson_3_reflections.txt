@@ -13,3 +13,8 @@ To "clone" a repository means to make a complete copy of it, usually preparatory
 What is the benefit of having a copy of the last known state of the remote stored locally?
 
 Storing the last known state of the remote allows you to perform certain operations offline, such as merges.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+You might have a set of shared files that can be opened by more than one person, and be optimistic that individuals will rarely be working on the same file, or that the work that they do will seldom be in conflict. You could more strictly share files, such as putting all the work into one file that cannot be simultaneously opened by more than one person, or having a "check out" system by which one person has exclusive access to a set of files for a period of time. Or, each collaborator could have his or her own set of files which are periodically merged. There are also software packages that allow simultaneous work on a single file, with a mechanism to handle conflicts. These would all have the advantage of being simpler to get started with, and for a lot of purposes, are perfectly adequate. However, complex changes and especially changes from multiple contributors that tend to be dependent on one another could get very difficult to manage in such scenarios.
+     
